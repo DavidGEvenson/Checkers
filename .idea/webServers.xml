@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2273f8c7-0998-40a9-b507-899100793194" name="web-checkers" url="https://cse.msu.edu/~evenson6/checkers">
+        <fileTransfer host="black.cse.msu.edu" port="22" rootFolder="/user/evenson6/web/checkers" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
