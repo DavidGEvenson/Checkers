@@ -26,6 +26,12 @@ h1 {
     margin: auto;
 }
 
+#inside_game {
+    border: 2px solid saddlebrown;
+    height: 80vh;
+    width: 80vh;
+}
+
 .square {
     float: left;
     width: 10vh;
@@ -34,4 +40,23 @@ h1 {
 
 .darksquare {
     background-color: saddlebrown;
+}
+
+.piece {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    margin: 1vh;
+}
+
+.piece:hover {
+    cursor: pointer;
+}
+
+.whitepiece {
+    background-color: white;
+}
+
+.blackpiece {
+    background-color: black;
 }
