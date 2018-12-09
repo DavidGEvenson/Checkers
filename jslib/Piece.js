@@ -1,18 +1,25 @@
-function Piece(i, color, g, x) {
+function Piece(row, col, color) {
     var that = this;
-    var id = i;
+    var id = row;
     var team = color;
-    var game = g;
-    this.locX = x;
-    this.locY = i;
 
-    $("#" + team + "piece" + id.toString()).click(function() {
-        console.log(that.locX + " " + that.locY);
-    });
+    this.c = col;
+    this.r = row;
 
+    this.king = false;
+    this.html = "<div class=\"piece " + team + "piece\" id=\"" +
+        team + "piece" + id + "\"></div>";
+
+    this.getTeam = function () {
+        return team;
+    }
 }
 
-Piece.prototype.move = function(loc) {
-    this.locX = loc[0];
-    this.locY = loc[1];
+Piece.prototype.move = function(c,r) {
+    this.c = c;
+    this.r = r;
+};
+
+Piece.prototype.getLoc = function () {
+    return [this.c, this.r];
 };

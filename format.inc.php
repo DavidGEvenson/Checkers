@@ -22,11 +22,11 @@ function createBoard() {
             $html .= " id=\"sq$i$j\">";
 
             if($j == 0 && $i%2 == 0 || $j == 1 && $i%2 == 1) {
-                $html .= "<div class=\"whitepiece piece\" id=\"wpiece$wcount\"></div>";
+                $html .= "<div class=\"wpiece piece\" id=\"wpiece$wcount\"></div>";
                 $wcount++;
             }
             if($j == 6 && $i%2 == 0 || $j == 7 && $i%2 == 1) {
-                $html .= "<div class=\"blackpiece piece\" id=\"bpiece$bcount\"></div>";
+                $html .= "<div class=\"bpiece piece\" id=\"bpiece$bcount\"></div>";
                 $bcount++;
             }
 

@@ -2,15 +2,21 @@ function Square(r, c, g) {
     var that = this;
     var row = r;
     var col = c;
-    var game = g;
+    var valid = false;
+    this.game = g;
 
+    var square = "#sq" + row.toString() + col.toString();
 
-
-    $("#sq" + row.toString() + col.toString()).click(function() {
-        //console.log("square: " + row + " " + col);
+    $(square).click(function() {
+        //console.log("square: " + col + " " + row);
+        that.game.hit(row, col);
     });
 
-    this.getLoc = function() {
-        return [r,c];
+    this.isValid = function () {
+        return valid;
+    };
+
+    this.setValid = function (bol) {
+        valid = bol;
     }
 }
